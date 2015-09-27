@@ -9,7 +9,44 @@
 </head>
 <body>
     <div class="container">
-        <center><h1>Welcome To Javascript Quiz</h1></center>
+        <center><h1>Welcome To Javascript Quiz</h1></center>    <div id="quizContent" class="row quiz">
+                <div class="col-sm-12">
+                    <h2 id="quizHeader"></h2>
+                </div>
+                <!-- /.col-sm-12 -->
+
+            <div id="questions" class="row">
+                <div class="col-sm-6"><a data-id="1" class="btn btn-default answer">1</a></div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6"><a data-id="2" class="btn btn-default answer">2</a></div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6"><a data-id="3" class="btn btn-default answer">3</a></div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6"><a data-id="4" class="btn btn-default answer">4</a></div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /#questions.row -->
+
+            <div class="row pageMovement">
+                <div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary pull-left">Previous</div>
+                <!-- /#btnPrevious.col-xs-5 col-sm-4 btn btn-primary pull-left -->
+                <div id="btnNext" class="col-xs-5 col-sm-4 btn btn-primary pull-right">Next</div>
+                <!-- /#btnPrevious.col-xs-5 col-sm-4 btn btn-primary pull-left -->
+            </div>
+            <!-- /.row pageMovement -->
+            <div class="row">
+                <div id="finishQuiz" class="btn btn-success btn-block hide">Submit Quiz</div>
+                <!-- /#finishQuiz.btn btn-success btn-block hide -->
+            </div>
+            <!-- /.row -->
+
+            <div class="row progress">
+                <div id="progressBar" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 0% Complete </div>
+                <!-- /#progressBar.progress-bar progress-bar-success progress-bar-striped -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#quizContent.row quiz -->
     </div>
     <!-- /.container -->
 
